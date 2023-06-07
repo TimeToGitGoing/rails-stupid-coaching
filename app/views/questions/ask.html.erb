@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <form action="/answer" data-turbo="false">
+    <label for="question">Ask your coach anything:</label>
+
+    <div class="input-group mb-3">
+    <input type="text"
+      class="form-control"
+      name="question"
+      value="<%= params[:question] %>"
+      aria-label="Recipient's username"
+      aria-describedby="button-addon2">
+    <button class="btn btn-primary" type="submit" value="Ask!" id="button-addon2">Button</button>
+    </div>
+  </form>
+</div>

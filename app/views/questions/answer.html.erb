@@ -1,0 +1,16 @@
+<%# display the question you ask your coach as well as his answer %>
+<div class="container">
+  <h1>Stupid Coaching</h1>
+
+  <div class="alert alert-light border-thing container rounded-0">
+    <p class="fs-4"><%= params[:question] %></p>
+    <p class="fs-4"> <i>-You</i> </p>
+  </div>
+
+  <div class="alert alert-warning border-thing container rounded-0">
+    <p class="fs-4"><%= @answer %></p>
+    <p class="fs-4"> <i>-Your coach</i> </p>
+  </div>
+
+    <%= link_to "Ask a new question", ask_path, class: 'text-decoration-none' %>
+</div>
